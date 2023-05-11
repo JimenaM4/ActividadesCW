@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El mundo de los libros</title>
+    <link rel="icon" href="icono.jpg" type="image/icon">
+</head>
+<body>
+    <h1 align="center">El mundo de los libros</h1>
+    <div align="center"><img src="portada.jpg" alt="libro" width="200" height="150"></div>
+    <h3 align="center">¡Bienvenidos!</h3>
+    <p align="center">
+        Aquí encontrarás todo tipo de libros, desde aquellos difíciles de encontrar, hasta los publicados recientemente, ¡Solo debes llenar el formulario para recibir la magia a la puerta de tu casa!
+    </p>
+    <table border="2" align="center" style="border-collapse:collapse;" cellpadding="20px">
+        <thead>
+            <tr>
+                <th>Género</th>
+                <th>Autor</th>
+                <th>Título</th>
+                <th>Producto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Policíaco</td>
+                <td>Javier Castillo</td>  
+                <td>
+                    <ul type="circle">
+                        <li>El día en que se perdió la cordura</li>
+                        <li>El día en que se perdio </li>
+                    </ul>
+                </td>
+                <td><div align="center"><img src="javier_castillo.jpg" alt="javier castillo" width="200" height="150"></div></td>
+            </tr>
+            <tr>
+                <td>Agatha Christie</td>
+                <td>
+                    <ul>
+                        <li>Diez Negritos</li>
+                        <li>Asesinato en el Orient Express</li>
+                    </ul>
+                </td>
+                <td><div align="center"><img src="agatha_cristie.png" alt="Agatha Christie" width="200" height="150"></div></td>
+            </tr>
+            <tr>
+                <td>Arthur Conan Doyle</td>
+                <td>
+                    <ul type="circle">
+                        <li>Saga completa de Sherlock Holmes</li>
+                    </ul>
+                </td>
+                <td><div align="center"><img src="sherlock.jpg" alt="Arthur Conan Doyle" width="200" height="150"></div></td>
+            </tr>
+            <tr>
+                <td rowspan="3">Fantasía</td>
+                <td>Holly Black</td>
+                <td>
+                    <ul>
+                        <li>Trilogia El principe cruel</li>
+                    </ul>
+                </td>
+                <td><div align="center"><img src="cardan_jude.png" alt="Holly Black" width="250" height="150"></div></td>
+            </tr>
+            <tr>
+                <td>Rick Riordan</td>
+                <td>
+                    <ul type="circle">
+                        <li>Saga: Percy Jackson y los dioses del Olimpo</li>
+                        <li>Saga: Los heroes del Olimpo</li>
+                    </ul>
+                </td>
+                <td>
+                    <img src="percy_dioses.jpg" alt="Rick Riordan" width="150" height="150">
+                    <img src="percy_heroes.jpg" alt="Rick Riordan" width="150" height="150">
+                </td>
+            </tr>
+            <tr>
+                <td>Marissa Meyer</td>  
+                <td>
+                    <ul>
+                        <li>Saga: Las crónicas lunares</li>
+                    </ul>
+                </td>
+                <td><div align="center"><img src="cronicas_lunares.jpg" alt="Marissa Meyer" width="200" height="150"></div></td>
+            </tr>
+            <tr>
+                <td rowspan="2">Ciencia Ficción</td>
+                <td>Aldous Huxley</td>
+                <td>
+                    <ul type="circle">
+                        <li>Un mundo feliz</li>
+                    </ul>
+                </td>
+                <td><div align="center"><img src="mundo_hippie.jpg" alt="Aldous Huxley" width="120" height="150"></div></td>
+            </tr>
+            <tr>
+                <td>Julio Verne</td>
+                <td>
+                    <ul>
+                        <li>La vuelta al mundo en ochenta días</li>
+                        <li>El viaje al centro de la Tierra</li>
+                    </ul>
+                </td>
+                <td>
+                    <img src="80dias.jpg" alt="Julio Verne" width="100" height="150">
+                    <img src="centroTierra.jpg" alt="Julio Verne" width="100" height="150">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <div align="center"><iframe src="https://giphy.com/embed/Q5RjtPsU4Ds5ByAVI9" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+    <h3 align="center">¡Realiza tu compra ahora mismo!</h3>
+<form>
+        <fieldset>
+    <form>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label>Nombre:
+                <input type="text"/>
+            </label><br><br>
+            <label for="apellido">Apellido:
+                <input id="apellido" type="text"/>
+            </label><br><br>
+            <label for="edad">Edad:</label>
+                <select id="edad">edad
+                        <option value="menos de 18">menos de 18</option>
+                        <option value="18">18</option>
+                        <option value="más de 18">más de 18</option>
+                </select><br><br>
+            Teléfono: <input type="tel" maxlength="10" pattern="55[0-9]{8}"><br><br>
+            Email: <input type="email" placeholder="lectur@gmail.com"><br><br>
+            Dirección: <br><textarea cols="100" rows="3" minlength="20" placeholder="Corina 3, Del Carmen, Coyoacán, 04100 Ciudad de México, CDMX, México"></textarea><br><br>
+            <input type="button"  value="Continuar"/>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Producto</legend>
+                <label>Artículo:
+                    <input type="text"/>
+                </label><br><br>
+                <label>Piezas:
+                    <input type="text"/>
+                </label><br><br>
+                Tipo de cubierta:<br>
+                <input type="radio" name="tapa" checked value="TB">Tapa blanda <br>
+                <input type="radio" name="tapa" checked value="TD">Tapa dura <br><br>
+                <label for="idioma">Idioma:</label>
+                <select id="idioma">idioma
+                        <option value="Es">Español</option>
+                        <option value="In">Ingles</option>>
+                </select><br><br>
+                Extras:<br>
+                <input type="checkbox" name="opcion" value="envioEx">Envio express<br>
+                <input type="checkbox" name="opcion" value="envoltura">Envoltura para regalo<br><br>
+                Día y hora de entrega: <input type="datetime-local"/><br><br>
+                
+        </fieldset>
+    </form>
+    <button type="submit">Comprar</button>   <button type="reset">Borrar</button>
+    </fieldset>
+</form>
+<br><br>
+<h3 align="center">¡Gracias por visitarnos!</h3>
+</body>
+</html>
