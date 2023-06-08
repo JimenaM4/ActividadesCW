@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAREAS</title>
+    <link rel="icon" href="./statics/media/icono.png" type="image/png">
+    <link rel="stylesheet" href="./statics/styles/style.css">
+    <link rel="stylesheet" href="../../../bootstrap/libs/bootstrap-5.3.0-dist/css/bootstrap.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./statics/media/tareas.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-top">To-Do List
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#formulario">Formulario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#lista_tareas">Lista de tareas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="modal"></div>
+    <main>
+        <div class="container my-3" id="forms">
+            <div class="row">
+                <!-- Formulario -->
+                <div class="col-12 col-md-4">
+                    <section id="formulario">
+                        <h1 class="h1">Ingresa nueva tarea</h1>
+                            <div class="form-floating mb-3">
+                                <select name="materia" class="form-control" id="materia">
+                                    <option value="Química">Química</option>
+                                    <option value="Matemáticas">Matemáticas</option>
+                                    <option value="Biología" >Biología</option>
+                                </select>
+                                <label for="materia" class="form-label">Materia</label>
+                            </div>
+                           <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="matnew" name="matnew"
+                                    placeholder="Nueva materia"  autocomplete="off">
+                                <label for="matnew" class="form-label">Nueva materia</label>
+                            </div> 
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="nueva" name="nueva"
+                                    placeholder="Nombre"  autocomplete="off">
+                                <label for="nueva" class="form-label">Nombre</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="descrip" name="descrip"
+                                    placeholder="Descripción"  autocomplete="off">
+                                <label for="descrip" class="form-label">Descripción</label>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-success" type="submit" id="btn_subir">Agregar</button>
+                            </div>
+                    </section>
+                </div>
+            </div>
+
+        </div>
+        <div id="listaT">
+            <h1 align="center">Lista de Tareas</h1>
+            <div id="lista" style="display:none"></div>
+            <div id="tareas"></div> 
+        </div>  
+    </main>
+    <script src="../../../bootstrap/libs/bootstrap-5.3.0-dist/js/bootstrap.bundle.js"></script>
+    <script src="./dynamics/index.js"></script>
+</body>
+</html>

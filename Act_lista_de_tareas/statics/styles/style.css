@@ -1,0 +1,64 @@
+body{
+    background-image: url("../media/fondo2.jpg");
+    opacity: 0.9;
+} 
+nav{
+    background-color: rgb(98, 164, 167);
+    position:fixed;
+    opacity: 1;
+    box-shadow: 1px 27px 19px -2px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 1px 27px 19px -2px rgba(0,0,0,0.6);
+    -moz-box-shadow: 1px 27px 19px -2px rgba(0,0,0,0.6);
+}
+#forms{
+    position: absolute;
+    left:18%;
+    top:20%;
+    background-color: rgb(160, 158, 158);
+    width: 25rem;
+    height: 26rem;
+    box-shadow: 20px 20px 30px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 20px 20px 30px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 20px 20px 30px -1px rgba(0,0,0,0.75);
+}
+#formulario{
+    position: relative;
+    left:5%;
+    width: 23rem;
+    height: 20rem;
+}
+#listaT{
+    position: absolute;
+    top:22.5%;
+    width: 25rem;
+    height: 26rem;
+    background-color:rgb(160, 158, 158);
+    left:53%;
+    overflow: auto;
+    box-shadow: 20px 20px 30px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 20px 20px 30px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 20px 20px 30px -1px rgba(0,0,0,0.75);
+}
+#btn_subir{
+    background-color: rgb(27, 114, 114);
+}
+.card{
+    position: relative;
+    left:10%;
+    margin: 4%;
+}
+.done{
+    background-color: rgb(77, 182, 182);
+    border-radius: 10%;
+    border-style: none;
+}
+.toDo{
+    background-color: rgb(174, 192, 71);
+    border-radius: 10%;
+    border-style: none;
+}
+.borrar{
+    background-color: rgb(231, 162, 32);
+    border-radius: 10%;
+    border-style: none;
+}
