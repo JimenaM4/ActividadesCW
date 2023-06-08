@@ -7,6 +7,7 @@ window.addEventListener("load", ()=>{
     const lista = document.getElementById("lista");
     const HW = document.getElementById("tareas");
     const desc = document.getElementById("descrip");
+    const borrar = document.getElementById("borrar");
     //contadores
     var toDo=0; 
     var done=0;
@@ -33,7 +34,7 @@ window.addEventListener("load", ()=>{
                     while(val<materias.length)
                     if(exist==0)
                     {
-                        lista.style.display = "block"; 
+                       // lista.style.display = "block"; 
                         mat.innerHTML += '<option value= "' + matnew.value + '">' + matnew.value + '</option>';
                         lista.innerHTML += `
                                     <div align="center" class="card" id="${task++}" style="width: 18rem;">
@@ -48,11 +49,9 @@ window.addEventListener("load", ()=>{
                         HW.innerHTML = '<p align="center">Tareas por hacer: ' + toDo + '<p>';
                         HW.innerHTML += '<p align="center">Tareas terminadas: ' + done + '<p>';
                         materias.push(matnew.value);
-                        toDo++;
                     }
                     else
                     {
-                        lista.style.display = "block"; 
                         lista.innerHTML += `
                         <div align="center" class="card" id="${task++}" style="width: 18rem;">
                             <div class="card-body">
@@ -65,13 +64,13 @@ window.addEventListener("load", ()=>{
                         </div>`; 
                     }
                     matnew.value='';
+                    toDo++;
                     HW.innerHTML = '<p align="center">Tareas por hacer: ' + toDo + '<p>';
                     HW.innerHTML += '<p align="center">Tareas terminadas: ' + done + '<p>';
-                    toDo++;
+
                 }
                 else
                 {
-                    lista.style.display = "block"; 
                     lista.innerHTML += `
                         <div align="center" class="card" id="${task++}" style="width: 18rem;">
                             <div class="card-body">
@@ -87,6 +86,7 @@ window.addEventListener("load", ()=>{
                     HW.innerHTML += '<p align="center">Tareas terminadas: ' + done + '<p>';
 
                  }
+                 
             }
             else
             {
@@ -112,19 +112,14 @@ window.addEventListener("load", ()=>{
                 e.target.outerHTML = '<button class="toDo">To-Do</button>';
             break;
             case "toDo":
-                done--;
+                done--; 
                 toDo++;
                 HW.innerHTML = '<p align="center">Tareas por hacer: ' + toDo + '<p>';
                 HW.innerHTML += '<p align="center">Tareas terminadas: ' + done + '<p>';
                 e.target.outerHTML = '<button class="done">Done</button>';
             break;
             case "borrar":
-                e.target.parentElement.outerHTML= ""; 
-                //const targeta = document.getElementById("targeta");
-                // targeta.addEventListener("click", (evento)=>{
-                //     console.log(evento.target.id);
-                // });
-                //lista.style.display = "none"; 
+                e.target.parentElement.remove();
                 if(done>1 && toDo>1) 
                 {
                     done--;
