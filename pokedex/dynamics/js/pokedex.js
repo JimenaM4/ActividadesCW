@@ -38,8 +38,6 @@ window.addEventListener("load", ()=>{
             alert(datosJSON.mensaje);
             console.log(datosJSON);  
         });
-        
-        console.log("ESTO JALA");
     });
     buscador.addEventListener("keyup", ()=>{
         let termino = buscador.value;
